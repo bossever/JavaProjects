@@ -69,22 +69,3 @@ public class Main {
     }
 }
 
-
-//a
-//a
-//        a
-//a
-//                a
-//a
-//                        a
-//a
-//                                a
-//a
-//                                        a
-//a
-//                                                a
-//a
-//                                                        a
-//a
-//                                                                a
-
