@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.*;
 
 public class Locations implements Map<Integer, Location> {
-
     private static final Map<Integer, Location> locations = new LinkedHashMap<>();
 
     public static void main(String[] args) throws IOException {
@@ -35,23 +34,30 @@ public class Locations implements Map<Integer, Location> {
     static {
 
         try (DataInputStream locFile = new DataInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
+        boolean eof = false;
 
-            while(true) {
-                Map<String, Integer> exits = new LinkedHashMap<>();
-                int locID = locFile.readInt();
-                String description = locFile.readUTF();
-                int numExits = locFile.readInt();
-                System.out.println("Read location " + locID + " : " + description + "\n" + "Found " + numExits + " exits.");
+            while(!eof) {
 
-                for (int i = 0; i < numExits; i++) {
-                    String direction = locFile.readUTF();
-                    int destination = locFile.readInt();
-                    exits.put(direction, destination);
-                    System.out.println("\t\t" + direction + "," + destination);
+                try {
+                    Map<String, Integer> exits = new LinkedHashMap<>();
+                    int locID = locFile.readInt();
+                    String description = locFile.readUTF();
+                    int numExits = locFile.readInt();
+                    System.out.println("Read location " + locID + " : " + description + "\n" + "Found " + numExits + " exits.");
+
+                    for (int i = 0; i < numExits; i++) {
+                        String direction = locFile.readUTF();
+                        int destination = locFile.readInt();
+                        exits.put(direction, destination);
+                        System.out.println("\t\t" + direction + "," + destination);
+                    }
+                    locations.put(locID, new Location(locID,description, exits));
+                } catch (EOFException e) {
+                    eof = true;
                 }
-                locations.put(locID, new Location(locID,description, exits));
             }
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.out.println("IOException");
         }
 
