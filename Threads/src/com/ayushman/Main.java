@@ -23,11 +23,7 @@ public class Main {
 
 
         //Using an anonymous class which extends Thread
-        new Thread() {
-            public void run() {
-                System.out.println(ANSI_GREEN + "Hello from the anonymous class thread.");
-            }
-        }.start();
+        new Thread(() -> System.out.println(ANSI_GREEN + "Hello from the anonymous class thread.")).start();
 
 
         //Using an anonymous class which is a subclass of another user-defined class (this user-defined class implements Runnable)
