@@ -27,6 +27,9 @@ public class Main {
 
         while(!gameOver) {
             playUser();
+            if (gameOver) {
+                break;
+            }
             playComputer();
         }
     }
