@@ -39,38 +39,45 @@ public class Main {
         //replaces all characters that fall in the range specified (inclusive), but with case sensitivity turned off
         System.out.println(alphaNumeric.replaceAll("(?i)[a-f3-8]", "X"));
         /*
-        (?i) --> ASCII strings
-        (?iu) --> UNICODE strings
+            (?i) --> ASCII strings
+            (?iu) --> UNICODE strings
          */
 
-        //the below two statements achieve the same purpose of replacing all numbers in the string with X
-        System.out.println(alphaNumeric.replaceAll("[0-9]", "X"));
+        //replace all numbers [0-9] with X
         System.out.println(alphaNumeric.replaceAll("\\d", "X"));
+        System.out.println(alphaNumeric.replaceAll("\\D", "X"));    //opposite
 
-        //replace all non-digits with X
-        System.out.println(alphaNumeric.replaceAll("\\D", "X"));
+        //////////////////////////////////////////////////////////////////////////
 
         String hasWhiteSpace = "I have blanks, a\ttab, and also, a \nnewline.";
         System.out.println(hasWhiteSpace);
 
         //replaces all whitespaces in the string with "" (nothing)
         System.out.println(hasWhiteSpace.replaceAll("\\s", ""));
-        //replaces all non-whitespaces in the string with "" (nothing)
-        System.out.println(hasWhiteSpace.replaceAll("\\s", ""));
+        System.out.println(hasWhiteSpace.replaceAll("\\s", ""));    //opposite
         /*
-        \\s     --> match whitespace characters
-        \\S     --> match all non-whitespace characters
+            \\s     --> match whitespace characters
+            \\S     --> match all non-whitespace characters
 
-        \\s     --> match a single whitespace character
-        \\s+    --> match sequence of one or more than one whitespace character
+            \\s     --> match a single whitespace character
+            \\s+    --> match sequence of one or more than one whitespace character
 
         These two behave differently when the string is replaced with a non-empty string
          */
 
         //replaces all word characters with X
         System.out.println(hasWhiteSpace.replaceAll("\\w", "X"));
+        System.out.println(hasWhiteSpace.replaceAll("\\W", "X"));   //opposite
         /*
             \w stands for "word character" --> [A-Za-z0-9_]
+            \W stands for not a word character
+         */
+
+        //replaces all word boundaries with X
+        System.out.println(hasWhiteSpace.replaceAll("\\b", "X"));
+        System.out.println(hasWhiteSpace.replaceAll("\\B", "X"));   //opposite
+        /*
+            \b      --> match all word boundaries (assuming that all words are separated by whitespaces)
          */
 
 
