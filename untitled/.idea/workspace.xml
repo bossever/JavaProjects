@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcf6e9fe-3d11-4bbd-93f0-dce0adefed7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/DebuggerDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DebuggerDemo/src/com/ayushman/StringUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Banking/src/com/ayushman/BankAccountTestParameterized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Banking/src/com/ayushman/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/untitled/Foo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/untitled/Foo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/untitled/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Foo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Banking/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Banking/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1n3vkLnwCTdpsrVZlAbVxkcaydp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +43,20 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
